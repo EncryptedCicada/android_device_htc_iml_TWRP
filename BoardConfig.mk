@@ -5,28 +5,39 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/htc/htc_iml
+# Platform
+TARGET_BOARD_PLATFORM := sdm660
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
+TARGET_USES_64_BIT_BINDER := true
 
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
+# Board
+BOARD_VENDOR := htc
+TARGET_BOOTLOADER_BOARD_NAME := $(shell echo $(TARGET_BOARD_PLATFORM) | tr  '[:lower:]' '[:upper:]')
+
+# Default device path
+DEVICE_PATH := device/$(BOARD_VENDOR)/$(TARGET_DEVICE)
 
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := kryo
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := htc_iml, htc_imldugl
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+TARGET_USES_UEFI := true
+
+# # Assert
+# TARGET_OTA_ASSERT_DEVICE := htc_iml, htc_imldugl
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -54,13 +65,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/htc/htc_iml
 TARGET_KERNEL_CONFIG := htc_iml_defconfig
 
-# Platform
-TARGET_BOARD_PLATFORM := sdm660
 
-# Hack: prevent anti rollback
-PLATFORM_SECURITY_PATCH := 2099-12-31
-VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
