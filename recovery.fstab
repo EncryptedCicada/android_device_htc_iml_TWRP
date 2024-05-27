@@ -1,0 +1,16 @@
+# mount point	fstype   device					        device2			          flags
+
+/system         ext4     /dev/block/mmcblk0p13                                    flags=display=system
+/vendor         ext4     /dev/block/mmcblk0p14                                    flags=display=vendor
+/cache          ext4     /dev/block/mmcblk0p60                                    flags=display=cache
+/cota           ext4     /dev/block/mmcblk0p48                                    flags=display=cota
+/data           ext4     /dev/block/mmcblk0p62                                    flags=display=data
+/sdcard         vfat     /dev/block/mmcblk1p1                                     flags=display=sdcard
+/boot           emmc     /dev/block/mmcblk0p12                                    flags=display=boot
+/recovery       emmc     /dev/block/mmcblk0p61                                    flags=display=recovery
+/misc           emmc     /dev/block/mmcblk0p50                                    flags=display=misc
+
+
+# Removable storage
+/external_sd	vfat	 /dev/block/mmcblk0p1			/dev/block/mmcblk0	      flags=storage;wipeingui;removable;encryptable=footer
+/usb_otg	    vfat	 /dev/block/sdg1				/dev/block/sdg		      flags=storage;wipeingui;removable
