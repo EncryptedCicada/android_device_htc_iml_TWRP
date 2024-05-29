@@ -6,3 +6,8 @@
 #
 
 LOCAL_PATH := device/htc/htc_iml
+
+PRODUCT_PACKAGES += \
+	chargeled \
+    qcom_decrypt \
+    qcom_decrypt_fbe
