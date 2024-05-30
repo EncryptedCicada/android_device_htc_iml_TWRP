@@ -73,6 +73,8 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 USE_COMMON_GPTUTILS := true
 
 # TWRP Configuration
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 #TW_SCREEN_BLANK_ON_BOOT := true
