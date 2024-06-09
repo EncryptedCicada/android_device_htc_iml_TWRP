@@ -75,7 +75,9 @@ USE_COMMON_GPTUTILS := true
 # TWRP Configuration
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_THEME := portrait_hdpi
+#TW_THEME := portrait_hdpi
+TARGET_SCREEN_WIDTH=1080
+TARGET_SCREEN_HEIGHT=2160
 TW_EXTRA_LANGUAGES := true
 #TW_SCREEN_BLANK_ON_BOOT := true
 #TW_INPUT_BLACKLIST := "hbtp_vm"
