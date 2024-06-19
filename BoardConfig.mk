@@ -72,7 +72,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/htc/htc_iml
+TARGET_KERNEL_SOURCE := kernel/htc/iml
 TARGET_KERNEL_CONFIG := iml-perf_defconfig
 
 # Partitions

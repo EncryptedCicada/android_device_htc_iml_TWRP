@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),htc_iml)
+ifeq ($(TARGET_DEVICE),iml)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 include $(CLEAR_VARS)

@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-LOCAL_PATH := device/htc/htc_iml
+LOCAL_PATH := device/htc/iml
 
 # define hardware platform
 PRODUCT_PLATFORM := sdm660
