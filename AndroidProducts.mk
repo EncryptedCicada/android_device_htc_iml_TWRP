@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_htc_iml.mk
+    $(LOCAL_DIR)/omni_iml.mk
