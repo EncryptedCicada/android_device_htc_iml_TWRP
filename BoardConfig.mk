@@ -34,7 +34,6 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_USES_UEFI := true
 
 # # Assert
 # TARGET_OTA_ASSERT_DEVICE := htc_iml, htc_imldugl
