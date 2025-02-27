@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_htc_iml.mk
+    $(LOCAL_DIR)/omni_iml.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_htc_iml-user \
-    omni_htc_iml-userdebug \
-    omni_htc_iml-eng
+    omni_iml-user \
+    omni_iml-userdebug \
+    omni_iml-eng

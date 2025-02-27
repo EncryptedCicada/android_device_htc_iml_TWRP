@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_htc_iml-user
-add_lunch_combo omni_htc_iml-userdebug
-add_lunch_combo omni_htc_iml-eng
+add_lunch_combo omni_iml-user
+add_lunch_combo omni_iml-userdebug
+add_lunch_combo omni_iml-eng

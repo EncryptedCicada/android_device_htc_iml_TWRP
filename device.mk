@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/htc/htc_iml
+LOCAL_PATH := device/htc/iml
 
 PRODUCT_PACKAGES += \
 	chargeled \
